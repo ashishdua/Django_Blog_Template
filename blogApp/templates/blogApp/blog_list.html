@@ -1,0 +1,30 @@
+{% extends 'blogApp/layout.html' %}
+
+
+{% block title %}
+				{% load staticfiles %}
+	
+{% endblock%}
+{% block css %}
+{% endblock %}
+{% block body %}
+	<div class="w3-card-4 w3-section"><!-- START OF BLOG POST DIVISION-->
+
+			<div class="w3-container ">
+				  <p>{% for blog in blogs %}
+				  <header class="w3-container w3-blue ">
+				  		<h1 class="w3-center">{{ blog.title|safe }}</h1>
+				  </header>
+				  <p class="w3-right-align" id="created_at"><u><i>{{ blog.created_at }}</i></u></p>
+				  <p class="w3-right-align" id="posted_by"><i>Posted By : <u>{{ blog.posted_by|safe }}</i></u></p>
+				  <p id="short_description">{{ blog.short_description|safe }}</p>
+				  <a href="{% url 'detail' pk=blog.pk  %}"><button class="w3-btn w3-border w3-border-indigo w3-round-xlarge w3-right" id="read_more_button">Read More</button></a>
+				  <img src="{{MEDIA_URL}}{{blog.image}}" alt="'Post Image'" style="width:50%;" id="blog_image"><br><br><br>
+						{% endfor %}
+
+			</div>
+		</div> <!-- END OF BLOG POST DIVISION -->
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

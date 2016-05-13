@@ -1,0 +1,116 @@
+<html>
+<head>
+
+	{%load staticfiles%}
+	<title>	info-tips						
+		{%block title%}
+
+		{%endblock%}
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="{% static 'blogApp/images/logo_black.jpg'%}"> <!--logo on site-->
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	      rel="stylesheet">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{%static 'blogApp/css/blog_list.css'%}">
+	{% block css %}
+	{% endblock %}
+
+
+</head>
+<body>
+
+		<ul class="w3-navbar  w3-xxlarge w3-indigo w3-left-align" id="home">
+			  <a href="/blogs"><img src="{% static 'blogApp/images/logo_black.jpg'%}" class="w3-circle w3-left" id="company_logo"></a>
+			  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right" id="trigram">
+			  	<a href="javascript:void(0);" onclick="myFunction()"><i class="material-icons md-36">&#xE5D2;</i></a>
+			  </li>
+
+			 <!-- <li class="w3-hide-medium w3-hide-large w3-opennav w3-right" id="trigram">
+			    	<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+			  </li>-->
+			  
+			  <li><a id="company_name" href="/blogs">info-tips</a></li>
+			  <li class="w3-hide-small" id="envelope"><a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons md-36">&#xE0BE;</i></a></li>
+			  <!--<li class="w3-hide-small w3-right"><a href="#" onclick="document.getElementById('id01').style.display='block'">Contact Us</a></li>-->
+			  <li class="w3-hide-small" id="info-circle"><a href="#" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons md-36">&#xE88E;</i></a></li>
+			  <!--<li class="w3-hide-small w3-right"><a href="#" onclick="document.getElementById('id02').style.display='block'">About</a></li>-->
+		</ul><!-- END OF MAIN NAVBAR -->
+
+		<div id="id01" class="w3-modal">
+  			<div class="w3-modal-content w3-animate-top w3-card-8">
+    			<header class="w3-container"> 
+      				<span onclick="document.getElementById('id01').style.display='none' "class="w3-closebtn">&times;</span>
+      				 <br><br><i class="material-icons md-80 message">&#xE0C9;</i>
+      				 <i class="material-icons md-80 phone">&#xE0CF;</i>
+    			</header>
+    			<br><br><br><div class="w3-container w3-indigo">
+      				<p class="w3-center" id="font_size1">Drop an email at <a href="mailto:ashish.dua26@gmail.com?Subject=Feedback/Blog Post" target="_top">ashish.dua26@gmail.com</a></p>
+      				<p class="w3-center" id="font_size2">Or, call us at <a href="#">+91-9958384571</a></p>
+      				<hr>
+      				<p class="w3-center" id="font_size4">(Do give us your feedback to help us improve)<p><br>
+      				<p class="w3-center" id="font_size3"><i>If you wish to post your own blog, please send us your content at the email id provided above!</i></p>
+    			</div>
+  			</div>
+		</div><!-- END OF MODAL CLASS FOR CONTACT US -->
+
+		<div id="id02" class="w3-modal">
+  			<div class="w3-modal-content w3-animate-top w3-card-8">
+    			<header class="w3-container w3-center"> 
+      				<span onclick="document.getElementById('id02').style.display='none' "class="w3-closebtn">&times;</span>
+      				 <br><i class="material-icons md-100 about">&#xE8D3;</i>
+    			</header>
+    			<br>
+    			<div class="w3-container w3-indigo">
+      				<p class="w3-center" id="font_size1"><span style="font-family:'Ubuntu Condensed', sans-serif;font-size: 22px;">info-tips</span> is a blog-post site, which pertains to not only one genre, but multiple genres.</p>
+      				<p class="w3-center" id="font_size1">One can find <i>informative - tips</i> [hence the name, <span style="font-family:'Ubuntu Condensed', sans-serif;font-size: 22px;">info-tips</span> ] , on different topics.</p>
+      				
+      				<p class="w3-center" id="font_size1">Blog Posts will be based on general day-to-day tips, providing easy and quick fixes.<br></p>
+      				<p class="w3-center" id="font_size1">Users can use these tips to make their life a little bit easier.</p>
+      				<br><hr>
+      				<p class="w3-center" id="font_size3"><i>You can also post your own blog if you want to share some nice tip, please send us your content at </i><a href="mailto:ashish.dua26@gmail.com?Subject=Feedback/Blog Post" target="_top">ashish.dua26@gmail.com</a></p>
+      				
+    			</div>
+  			</div>
+		</div><!-- END OF MODAL CLASS FOR ABOUT US-->
+
+		<div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+			  <ul class="w3-navbar w3-center-align w3-large">
+			  	<li><a href="#" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons md-36">&#xE88E;</i></a></li>
+			    <!--<li><a href="#" onclick="document.getElementById('id02').style.display='block'">About</a></li>-->
+			     <li><a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons md-36">&#xE0BE;</i></i></a></li>
+			    <!--<li><a href="#" onclick="document.getElementById('id01').style.display='block'">Contact Us</a></li>-->
+			  </ul>
+		</div><!-- END OF COLLAPSING NAVBAR -->
+		{%block body%}
+
+		{%endblock%}
+		<footer class="w3-container w3-indigo w3-center"><!-- START OF FOOTER -->
+			<p>If you wish to post a blog on our site or wish to leave a feedback for already posted blogs click <a href="#" onclick="document.getElementById('id01').style.display='block'">here</a>. </p>
+			<a href="#" class="back-to-top w3-btn-floating w3-indigo w3-right" id="top_button"><i class="material-icons">&#xE5D8;</i></a><!-- BACK TO TOP BUTTON -->
+			<a href="https://www.facebook.com/infomativetips/" target="_blank" id="fb_button"><i class="fa fa-facebook-official w3-xlarge" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			<a href="https://www.instagram.com/informativetips" target="_blank" id="instagram_button"><i class="fa fa-instagram w3-xlarge" aria-hidden="true"></i></a>
+
+			<p>&copy; 2016 , <span style="font-family:'Ubuntu Condensed', sans-serif;font-size: 18px;">info-tips</span> , All Rights Reserverd</p><br>
+		</footer><!-- END OF FOOTER -->
+
+
+
+
+
+
+	
+	<!-- SCRIPTS START FROM HERE -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src = "{% static 'blogApp/js/blog_list.js' %}"></script>
+
+	{% block javascript %}
+	
+	{% endblock %}
+	
+
+</body>
+
+</html>
