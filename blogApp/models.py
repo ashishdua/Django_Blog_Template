@@ -10,6 +10,10 @@ class blogPost(models.Model):
 	image=models.FileField(upload_to="")
 	created_at=models.DateTimeField()
 	posted_by=models.CharField(max_length=150)
+	order=models.IntegerField(default=0)
+
+	class Meta:
+		ordering = ['-order',]
 	
 	def __str__(self):
 		return self.title
