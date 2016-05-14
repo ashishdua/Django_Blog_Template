@@ -13,13 +13,13 @@
 			<div class="w3-container ">
 				  <p>{% for blog in blogs %}
 				  <header class="w3-container w3-blue ">
-				  		<h1 class="w3-center">{{ blog.title|safe }}</h1>
+				  		<h1 class="w3-center" id="blog_title">{{ blog.title|safe }}</h1>
 				  </header>
 				  <p class="w3-right-align" id="created_at"><u><i>{{ blog.created_at }}</i></u></p>
 				  <p class="w3-right-align" id="posted_by"><i>Posted By : <u>{{ blog.posted_by|safe }}</i></u></p>
 				  <p id="short_description">{{ blog.short_description|safe }}</p>
 				  <a href="{% url 'detail' pk=blog.pk  %}"><button class="w3-btn w3-border w3-border-indigo w3-round-xlarge w3-right" id="read_more_button">Read More</button></a>
-				  <img src="{{MEDIA_URL}}{{blog.image}}" alt="'Post Image'" style="width:50%;" id="blog_image"><br><br><br>
+				  <a href="{{MEDIA_URL}}{{blog.image}}"><img src="{{MEDIA_URL}}{{blog.image}}" alt="'Post Image'" style="width:50%;" id="blog_image"></a><br><br><br>
 						{% endfor %}
 
 			</div>
