@@ -11,6 +11,12 @@
 	margin-top: 18px;
 	margin-right: 20px;
 }
+
+@media only screen and (max-width: 291px){
+	#trigram{
+		margin-top: 8px;
+	}
+}
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-80.message { 
 	font-size: 80px; 
@@ -31,11 +37,16 @@
 	color: #FF8800;
 	
 }
+.md-100.policy {
+	font-size: 100px;
+	color: #FF8800;
+}
 .w3-navbar li a{
 
 		font-size: 20px;
 		transition: all 0.5s;
 	}
+
 .w3-navbar li a:hover{
 		color: #ffcb33;
 		background:none;
@@ -46,42 +57,39 @@
 		color: #fff;
 
 	}
-	#demo ul li a{
+#demo ul li a{
 		border-bottom: 2px solid #d9dcf1;
 	}
 	
-	#demo ul li a:hover{
-		background-color: #8591d4;
-	}
-	@media only screen and (max-width: 768px){
+	
+@media only screen and (max-width: 768px){
 		.w3-navbar li a:hover,#demo ul li a:hover{
 			background:none;
 			color: #fff;
 		}
-		#demo ul li a:hover{
-
-		}
-
+	
 		.material-icons.md-80.message {
 			margin-left: 15%;
 		}
 		.material-icons.md-80.phone {
 			margin-left: 30%;
 		}
+
 	}
-	#company_name{
+#company_name{
 		font-family: 'Ubuntu Condensed', sans-serif;
 		font-size: 45px;
 
 	}
 
-	#company_logo{
+#company_logo{
 		width: 60px;
 		height: 60px;
 		margin-top: 11px;
 		margin-left: 70px;
 	}
-	@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px){
 		#company_logo{
 			margin-left: 30px;
 		}
@@ -89,8 +97,28 @@
 			margin-left: 100px;
 		}
 		
-	}
+}
 
+@media only screen and (max-width: 343px){
+	#company_logo{
+		width: 45px;
+		height: 45px;
+	}
+	#company_name{
+		font-size: 35px;
+		margin-left: 80px;
+	}
+}
+@media only screen and (max-width: 291px){
+	#company_logo{
+		width: 40px;
+		height: 40px;
+	}
+	#company_name{
+		font-size: 30px;
+		margin-left: 80px;
+	}
+}
 	
 	hr{
 		margin-left: auto;
@@ -108,7 +136,16 @@
 		.w3-card-4{
 			width: 100%;
 		}
+
+		#blog_title{
+			font-size: 30px;
+		}
 	}
+@media only screen and (max-width: 343px){
+	#blog_title{
+		font-size: 20px;
+	}
+}
 a.back-to-top {
 	display: none;
 	width: 30px;
@@ -138,6 +175,9 @@ a.back-to-top:hover{
 
 #font_size1,#font_size2,#font_size3{
 		font-size: 18px;
+}
+#font_size4{
+	font-size:  14px;
 }
 #read_more_button{
 	background-color: #fff;
@@ -179,8 +219,8 @@ a.back-to-top:hover{
 }
 #short_description,#content{
 	font-size: 18px;
-	color:#437f23;
+	color:#ED4956;
 }
 #created_at,#posted_by{
-	color: #e0a59d;
+	color: #437f23;
 }
