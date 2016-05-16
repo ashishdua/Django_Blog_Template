@@ -1,12 +1,19 @@
 {% extends 'blogApp/layout.html' %}
-
-
+{%block head%}
+<meta property="og:url"  content="http://www.info-tips.in/{% url 'detail' pk=blogs.pk  %}" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="{{ blogs.title}} -- {{ blogs.posted_by }}" />
+<meta property="og:description"        content="{{ blogs.short_description }}" />
+<meta property="og:image"              content="{{MEDIA_URL}}{{blogs.image}}" />
+{%endblock%}
 {% block title %}
 				{% load staticfiles %}
-	{{ blog.title }}
+	{{ blogs.title }}
 {% endblock%}
 {% block css %}
 {% endblock %}
+
+
 {% block body %}
 <div id="fb-root"></div><!-- FOR FACEBOOK SHARE BUTTON -->
 <div class="w3-card-4 w3-section"><!-- START OF BLOG POST DIVISION-->
