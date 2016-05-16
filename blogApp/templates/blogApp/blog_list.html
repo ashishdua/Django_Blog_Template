@@ -15,8 +15,8 @@
 				  <header class="w3-container w3-blue ">
 				  		<a href="{% url 'detail' pk=blog.pk  %}" id="blog_title_link"><h1 class="w3-center" id="blog_title">{{ blog.title|safe }}</h1></a>
 				  </header>
-				  <p class="w3-right-align" id="created_at"><u>{{ blog.created_at }}</u></p>
-				  <p class="w3-right-align" id="posted_by">Posted By : <u>{{ blog.posted_by|safe }}</u></p>
+				  <p class="w3-right-align" id="created_at"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ blog.created_at }}</p>
+				  <p class="w3-right-align" id="posted_by"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;{{ blog.posted_by|safe }}</p>
 				  <p id="short_description">{{ blog.short_description|safe }}</p>
 				  <a href="{% url 'detail' pk=blog.pk  %}"><button class="w3-btn w3-border w3-border-indigo w3-round-xlarge w3-right" id="read_more_button">Read More</button></a>
 				  <a href="{{MEDIA_URL}}{{blog.image}}"><img src="{{MEDIA_URL}}{{blog.image}}" alt="'Post Image'" style="width:50%;" id="blog_image"></a><br><br><br>
