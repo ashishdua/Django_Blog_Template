@@ -1,18 +1,9 @@
-#envelope,#info-circle{
-	margin-top: 14px;
-	margin-right: 70px;
-	float: right;
-}
-#info-circle{
-	margin-right: 15px;
-}
-
 #trigram{
 	margin-top: 18px;
 	margin-right: 20px;
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 343px){
 	#trigram{
 		margin-top: 8px;
 	}
@@ -48,10 +39,23 @@
 	}
 
 .w3-navbar li a:hover{
-		color: #ffcb33;
+		color: #FFEB3B;
 		background:none;
 
 }
+#twitter,#facebook,#instagram,#envelope,#info-circle{
+	margin-top: 14px;
+}
+#twitter:hover{
+	color:#1DA1F2;
+}
+#facebook:hover{
+	color:#000;
+}
+#instagram:hover{
+	color:#FF4141;
+}
+
 #demo{
 		background-color: #606fc7;
 		color: #fff;
@@ -61,13 +65,13 @@
 		border-bottom: 2px solid #d9dcf1;
 	}
 	
-	
-@media only screen and (max-width: 768px){
-		.w3-navbar li a:hover,#demo ul li a:hover{
+@media only screen and (max-width: 850px){
+	.w3-navbar li a:hover,#demo ul li a:hover,#twitter:hover,#facebook:hover,#instagram:hover{
 			background:none;
 			color: #fff;
-		}
-	
+	}
+}
+@media only screen and (max-width: 768px){
 		.material-icons.md-80.message {
 			margin-left: 15%;
 		}
@@ -75,30 +79,69 @@
 			margin-left: 30%;
 		}
 
-	}
+}
 #company_name{
 		font-family: 'Ubuntu Condensed', sans-serif;
 		font-size: 45px;
 
-	}
+}
 
 #company_logo{
 		width: 60px;
 		height: 60px;
 		margin-top: 11px;
 		margin-left: 70px;
-	}
+}
 
-@media only screen and (max-width: 768px){
+/*@media only screen and (max-width: 768px){
 		#company_logo{
 			margin-left: 30px;
 		}
 		#company_name{
 			margin-left: 100px;
+		}		
+}*/
+
+@media only screen and (max-width: 689px){
+	#company_logo{
+			margin-left: 30px;
+	}	
+	#company_name{
+		margin-left: 15px;
+	}
+}
+@media only screen and (max-width: 638px){
+	#company_logo{
+			margin-left: 30px;
 		}
-		
+
+	#company_name{
+		margin-left: 5px;
+	}
 }
 
+
+@media only screen and (max-width: 600px){
+	#company_logo{
+			margin-left: 30px;
+		}
+
+	#company_name{
+		margin-left: 110px;
+	}
+}
+@media only screen and (max-width: 353px){
+	#company_logo{
+			margin-left: 30px;
+			width: 50px;
+			height: 50px;
+		}
+
+	#company_name{
+		margin-left: 80px;
+		font-size: 40px;
+	}
+}
 @media only screen and (max-width: 343px){
 	#company_logo{
 		width: 45px;
@@ -223,7 +266,27 @@ a.back-to-top:hover{
 #fb_button,#instagram_button,#twitter_button{
 	text-decoration: none;
 	outline: none;
+	transition: all 0.5s;
 }
+#fb_button:hover{
+	color: #000;
+}
+#instagram_button:hover{
+	color: #FF4141;
+}
+#twitter_button:hover{
+	color: #1DA1F2;
+}
+#fb_button_list{
+	color: #3B5998;
+}
+#instagram_button_list{
+	color: #FF4141;
+}
+#twitter_button_list{
+	color: #1DA1F2;
+}
+
 #short_description,#content{
 	font-size: 16px;
 	color:#000;
@@ -239,6 +302,15 @@ a.back-to-top:hover{
 @media only screen and (max-width: 768px){
 	#short_description,#content{
 		font-size: 15px;
+	}
+	#fb_button{
+	color: #000;
+	}
+	#instagram_button{
+		color: #FF4141;
+	}
+	#twitter_button{
+		color: #1DA1F2;
 	}
 }
 
