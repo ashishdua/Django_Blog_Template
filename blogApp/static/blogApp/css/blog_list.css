@@ -319,3 +319,10 @@ a.back-to-top:hover{
 		font-size: 14px;
 	}
 }
+#short_description a{
+	color: #686868;
+}
+
+#content a{
+	color: #686868;
+}

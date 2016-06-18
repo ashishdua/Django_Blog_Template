@@ -26,43 +26,6 @@ function myFunction() {
 
 
 
-/*
-$(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 2500);
-        return false;
-      }
-      }
-   });
-  });
-*/
-/*
-var m=document.getElementById('id02');
-window.onclick=function(event) {
-  if (event.target==m){
-    m.style.display="none";
-  }
-}
-
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-*/
-
-
-
 var amountScrolled = 150;
 
 $(window).scroll(function() {

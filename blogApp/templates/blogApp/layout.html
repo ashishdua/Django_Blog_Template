@@ -10,18 +10,49 @@
 		{%endblock%}
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="description" content="info-tips is a blog-post site, which caters to a multitude of genres. Here, one can find informative - tips [hence the name, info-tips ] , on different topics. Blog Posts will be based on general day-to-day tips, providing easy and quick fixes. [LIFE HACKS !] Users can utilise these tips to make their lives much easier.">
+	<meta name="keywords" content="informative,tips,informative-tips,life-hacks,hacks,info,tips,info-tips,blogs,blog,post,posts,technology,django,python">
+	<meta name="author" content="Ashish Dua">
 	<meta name="google-site-verification" content="lhOudrRRG1qD-IB2KtRGtVVuG8HPLBMIYyZfuTgjAPA" />
-	<link rel="shortcut icon" href="{% static 'blogApp/images/logo_black.jpg'%}"> <!--logo on site-->
+
+
+
+	<!-- Icons Start Here -->
+	<link rel="apple-touch-icon" sizes="57x57" href="{% static 'blogApp/images/apple-icon-57x57.png'%}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{% static 'blogApp/images/apple-icon-60x60.png'%}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'blogApp/images/apple-icon-72x72.png'%}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{% static 'blogApp/images/apple-icon-76x76.png'%}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'blogApp/images/apple-icon-114x114.png'%}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{% static 'blogApp/images/apple-icon-120x120.png'%}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{% static 'blogApp/images/apple-icon-144x144.png'%}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{% static 'blogApp/images/apple-icon-152x152.png'%}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static 'blogApp/images/apple-icon-180x180.png'%}">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{% static 'blogApp/images/android-icon-192x192.png'%}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'blogApp/images/favicon-32x32.png'%}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{% static 'blogApp/images/favicon-96x96.png'%}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'blogApp/images/favicon-16x16.png'%}">
+	<link rel="manifest" href="{% static 'blogApp/images/manifest.json'%}">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="{% static 'blogApp/images/ms-icon-144x144.png'%}">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Frame Work Used - W3.CSS -->
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	<!-- Google Font Families and Material Icons -->
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	      rel="stylesheet">
-	
-	<link rel="stylesheet" type="text/css" href="{%static 'blogApp/css/blog_list.css'%}">
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Font-Awesome Script -->
 	<script src="https://use.fontawesome.com/6d3eaf0c2d.js"></script>
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" type="text/css" href="{%static 'blogApp/css/blog_list.css'%}">
 	
+	<!-- Google Adsense Script -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
 		  (adsbygoogle = window.adsbygoogle || []).push({
 		    google_ad_client: "ca-pub-9354873488824539",
@@ -120,9 +151,9 @@
 
 		<div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
 			  <ul class="w3-navbar w3-center-align w3-large">
-			  	<li><a href="#" onclick="document.getElementById('id02').style.display='block'"><i class="material-icons md-36">&#xE88E;</i></a></li>
+			  	<li><a href="#" onclick="document.getElementById('id02').style.display='block'">About</a></li>
 			    <!--<li><a href="#" onclick="document.getElementById('id02').style.display='block'">About</a></li>-->
-			     <li><a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="material-icons md-36">&#xE0BE;</i></i></a></li>
+			     <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Contact Us</a></li>
 			    <!--<li><a href="#" onclick="document.getElementById('id01').style.display='block'">Contact Us</a></li>-->
 			    <a href="https://www.instagram.com/informativetips" target="_blank" id="instagram_button_mobile_nav"><i class="fa fa-instagram w3-xxlarge w3-left w3-margin" aria-hidden="true"></i></a>
 
@@ -185,13 +216,16 @@
 
 	
 	<!-- SCRIPTS START FROM HERE -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	<!-- Custom JavaScript File -->
 	<script src = "{% static 'blogApp/js/blog_list.js' %}"></script>
+
+	<!-- Infolinks Script -->
 	<!-- <script type="text/javascript">
 	var infolinks_pid = 2770522;
 	var infolinks_wsid = 0;
-	</script> -->
-	<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+	</script> 
+	<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>-->
 	{% block javascript %}
 	
 	{% endblock %}
