@@ -24,7 +24,7 @@
 				  </header>
 				  <p class="w3-right-align" id="created_at"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;{{ blogs.created_at }}</p>
 				  <p class="w3-right-align" id="posted_by"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;{{ blogs.posted_by|safe }}</p>
-				  <p class="" id="content">{{ blogs.content|safe }}</p>
+				  <p id="content">{{ blogs.content|safe }}</p>
 				 
 				  <a href="{{MEDIA_URL}}{{blogs.image}}"><img src="{{MEDIA_URL}}{{blogs.image}}" alt="'Post Image'" style="width:70%;" id="blog_image"></a><br><br><br>
 				  <input type="button" value="Back" onclick="history.back(-1)" class="w3-btn w3-border w3-border-indigo w3-round-xlarge w3-right" id="read_more_button"/>

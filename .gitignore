@@ -4,3 +4,4 @@ venv1.9
 db.sqlite3
 /static
 .DS_Store
+blog/settings.py

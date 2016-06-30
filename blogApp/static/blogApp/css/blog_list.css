@@ -288,7 +288,8 @@ a.back-to-top:hover{
 }
 
 #short_description,#content{
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: 530;
 	color:#000;
 }
 #created_at,#posted_by{
@@ -318,11 +319,4 @@ a.back-to-top:hover{
 	#short_description,#content{
 		font-size: 14px;
 	}
-}
-#short_description a{
-	color: #686868;
-}
-
-#content a{
-	color: #686868;
 }
