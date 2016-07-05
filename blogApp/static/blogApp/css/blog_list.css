@@ -289,7 +289,7 @@ a.back-to-top:hover{
 
 #short_description,#content{
 	font-size: 18px;
-	font-weight: 530;
+	font-weight: 500;
 	color:#000;
 }
 #created_at,#posted_by{
@@ -302,7 +302,7 @@ a.back-to-top:hover{
 }
 @media only screen and (max-width: 768px){
 	#short_description,#content{
-		font-size: 15px;
+		font-size: 16px;
 	}
 	#fb_button{
 	color: #000;
