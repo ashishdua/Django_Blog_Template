@@ -34,6 +34,9 @@ This blog template is ready to use, fully responsive and light weight.
 2. Light Weight
 3. Ready to use Facebook share button
 
+## Hosting
+The demo site is hosted on https://www.pythonanywhere.com . To learn how to host your blog site in pythonanywhere, follow the given link http://ashishdua.pythonanywhere.com/5/ .
+
 ### Contact
 For any queries on setting up the project, feel free to drop a mail at ashish.dua26@gmail.com. 
 
